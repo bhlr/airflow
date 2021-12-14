@@ -26,6 +26,7 @@ services:
         volumes:
             - ./dags:/usr/local/airflow/dags
             - ./monitor:/home/airflow/monitor
+            - ./files:/usr/local/airflow/files
             # - ./plugins:/usr/local/airflow/plugins
         ports:
             - "8080:8080"
